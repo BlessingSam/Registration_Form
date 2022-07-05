@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Registrarion Form</title>
+</head>
+<body>
+    <div class="DS1 CM"></div>
+    <div class="DS2 CM"></div>
+    <div class="DS3 CM"></div>
+    <div class="DS4 CM"></div>
+    <div class="DS5 CM"></div>
+    <div class="DS6 CM"></div>
+    <div class="DS7 CM"></div>
+    <div class="DS8 CM"></div>
+    <div class="RF1">
+        <div class="DS9">
+            <h2>Registrarion <br> From</h2>
+        </div>
+        <form action="">
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter Your Name">
+            <label for="">Gender</label>
+            <div class="dropdown">
+                <input type="text" placeholder="Select Gender" class="SelectBox">
+                <div class="option">
+                    <div onclick="show('Male')">Male</div>
+                    <div onclick="show('Female')">Female</div>
+                    <div onclick="show('Other')">Other</div>
+                </div>
+            </div>
+            <label for="">Date of Birth</label>
+            <input type="date" name="" id="">
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter Your Eamil">
+            <label for="">Mobile</label>
+            <input type="text" placeholder="Enter Your Mobile Number">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script>
+        function show(anything){
+            document.querySelector('.SelectBox').value = anything;
+        }
+        
+        let dropdown = document.querySelector('.dropdown');
+        dropdown.onclick = function(){
+            dropdown.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
